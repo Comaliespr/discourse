@@ -273,7 +273,7 @@ gem "faraday-retry"
 gem "net-http"
 
 # workaround for prometheus-client
-gem "webrick", require: false
+gem "webrick", ">= 1.8.2", require: false
 
 # Workaround until Ruby ships with cgi version 0.3.6 or higher.
 gem "cgi", ">= 0.3.6", require: false
