@@ -19,13 +19,13 @@ else
   #
   # To issue a rails update bump the version number here
   rails_version = "7.0.5.1"
-  gem "actionmailer", rails_version
-  gem "actionpack", rails_version
+  gem "actionmailer", ">= 7.0.8.5", rails_version
+  gem "actionpack", ">= 7.0.8.5", rails_version
   gem "actionview", rails_version
   gem "activemodel", rails_version
   gem "activerecord", rails_version
   gem "activesupport", rails_version
-  gem "railties", rails_version
+  gem "railties", ">= 7.0.8.5", rails_version
   gem "sprockets-rails"
 end
 
@@ -161,7 +161,7 @@ group :test, :development do
   gem "shoulda-matchers", require: false
   gem "rspec-html-matchers"
   gem "byebug", require: ENV["RM_INFO"].nil?, platform: :mri
-  gem "rubocop-discourse", require: false
+  gem "rubocop-discourse", ">= 3.8.1", require: false
   gem "parallel_tests"
 
   gem "rswag-specs"
