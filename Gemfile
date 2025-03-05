@@ -116,7 +116,7 @@ gem "mini_racer"
 
 gem "highline", require: false
 
-gem "rack"
+gem "rack", ">= 2.2.12"
 
 gem "rack-protection" # security
 gem "cbor", require: false
@@ -276,6 +276,6 @@ gem "net-http"
 gem "webrick", require: false
 
 # Workaround until Ruby ships with cgi version 0.3.6 or higher.
-gem "cgi", ">= 0.3.6", require: false
+gem "cgi", ">= 0.3.7", require: false
 
 gem "tzinfo-data"
